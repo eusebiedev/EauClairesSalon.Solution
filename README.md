@@ -2,11 +2,12 @@
 
 #### By _**Eusebie Siebenberg**_
 
-#### Description
+#### Indpendent Code Review project: Build an MVC web application to help a salon owner manage their employees (stylists) and their clients.
 
 ## Technologies Used
 
 * _C#_
+* _Entity Framework Core_
 * _MySQL Workbench_
 * _Razor_
 * _ASP.NET Core MVC_
@@ -14,22 +15,36 @@
 * _.NET6_
 * _Command Line_
 
+## Description 
+
+_Eau Claire's Salon is an application built to allow the user to add, edit, delete and save Stylists and their Clients. View a list of stylists details and clients, and view the stylists each client prefers. 
+
 ## Setup/Installation Requirements
 
 1. _Open your shell of choice (e.g., Terminal or GitBash) and run these commands in order:_
 2. _Clone this repository by running $ `git clone https://github.com/user/examplerepo.git` (replace url with link copied from github)_
-3. _Once downloaded, navigate to this project's production directory called "HairSalon" with $ `cd HairSalon`._
+3. _Navigate to the root directory call `EauClairesSalon.Solution`, Create a `.gitignore` file with $ `touch .gitignore`, copy/paste this into the .gitignore file:_
+```
+obj
+bin
+appsetting.json
+```
+3. _Navigate to this project's production directory called "HairSalon" with $ `cd HairSalon`._
 4. Within the production directory create a new file called `appsettings.json`.
-5. Within `appsettings.json`, put in the following code, replacing the `uid` and `pwd` values with your own username and password for MySQL.
+5. Within `appsettings.json`, paste in the following code, replacing the `uid` and `pwd` values with your own username and password for MySQL:
 
 ```json
 {
   "ConnectionStrings": {
-      "DefaultConnection": "Server=localhost;Port=3306;database=eusebie_siebenberg;uid=root;pwd=epicodus;"
+      "DefaultConnection": "Server=localhost;Port=3306;database=eusebie_siebenberg;uid=[user-id];pwd=[password];"
   }
 }
 ```
-6. Within the production directory "HairSalon", run `dotnet watch run` in the command line to start the project in development mode with a watcher.
+6. Run these commands in your shell to install the necessary dependencies:
+* $ `dotnet add package Microsoft.EntityFrameworkCore -v 6.0.0`
+* $ `dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0`
+
+7. Within the production directory "HairSalon", run `dotnet watch run` in the command line to start the applicatoin in development mode with a watcher.
 
 ## Known Bugs 
 
