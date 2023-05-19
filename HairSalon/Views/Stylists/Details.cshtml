@@ -2,30 +2,30 @@
   Layout = "_Layout";
 }
 
-@model BestRestaurants.Models.Cuisine
-@using BestRestaurants.Models
+@model HairSalon.Models.Stylist
+@using HairSalon.Models
 
-<h2>Cuisine Details</h2>
+<h2>Stylist Details</h2>
 <hr />
 <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)<h3>
-<h3>@Html.DisplayNameFor(model => model.Type): @Html.DisplayFor(model => model.Type)<h3>
+<h3>@Html.DisplayNameFor(model => model.Specialty): @Html.DisplayFor(model => model.Specialty)<h3>
 
-@if (@Model.Restaurants.Count == 0)
+@if (@Model.Clients.Count == 0)
 {
-  <h3>No restaurants have been added for this cuisine yet!</h3>
+  <h3>No Clients have been added for this Stylist yet!</h3>
 } 
 else
 {
-  <h3>Restaurants:</h3>
+  <h3>Clients:</h3>
   <ul>
-    @foreach (Restaurant restaurant in Model.Restaurants)
+    @foreach (Client client in Model.Clients)
     {
-      <li>@Html.ActionLink($"{restaurant.Description}", "Details", "Restaurants", new { id = restaurant.RestaurantId })</li>
+      <li>@Html.ActionLink($"{client.Name}", "Details", "Clients", new { id = client.ClientId })</li>
     }
   </ul>
 }
 
-<p>@Html.ActionLink("Edit Cuisine", "Edit", new { id = Model.CuisineId })</p>
-<p>@Html.ActionLink("Add a new restaurant", "Create", "Restaurants")</p>
-<p>@Html.ActionLink("Delete Cuisine", "Delete", new { id = Model.CuisineId })</p>
-<p>@Html.ActionLink("Back to list", "Index")</p>
+<p>@Html.ActionLink("Edit Stylilst", "Edit", new { id = Model.StylistId })</p>
+<p>@Html.ActionLink("Add a new Stylist", "Create", "Stylists")</p>
+<p>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</p>
+<p>@Html.ActionLink("Back to Stylist List", "Index")</p>
