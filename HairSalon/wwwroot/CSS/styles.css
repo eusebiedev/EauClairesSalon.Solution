@@ -6,10 +6,12 @@ div#footer {
 	position:fixed;
 	bottom:0px;
 	left:0px;
-	width:100%;
+  height: 10%;
+	width: 100%;
   color:#000000;
-  background: rgb(255, 136, 255);
 	padding:8px;
+  background: url('/salon.png') repeat; 
+  background-position-y: bottom ;
 }
 
 div#header {
