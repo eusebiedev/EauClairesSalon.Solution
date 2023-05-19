@@ -29,3 +29,7 @@ div#header {
 	border-right: 4px solid  rgb(255, 136, 255);
 	
 }
+
+.offcanvas-body {
+  background-color: whitesmoke;
+}

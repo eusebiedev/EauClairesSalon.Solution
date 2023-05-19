@@ -9,10 +9,31 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
       crossorigin="anonymous">
     <link rel="stylesheet" href="~/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body class="p-3 m-5">
     <div class="container mt-4">
     @RenderBody()
+    <a class="btn btn-primary btn-sm" data-bs-toggle="offcanvas" href="#offcanvasSalon" role="button" aria-controls="offcanvasSalon">Salon Services & Information</a>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSalon" aria-labelledby="offcanvasSalonLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasSalonLabel">Eau Claire Salon Services & About Us!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Welcome to our family-owned salon. We've been in the business of shaping you since 1972! Located in the sunny valley of Dream Porch, Oregon, where the hair grows fast and the beards need trimming! Here are a few of our services:<br>
+          <ul>
+            <li>Perm (that's right, folks still love getting that perm!)</li>
+            <li>Frizz-Out (inquire within)</li>
+            <li>Braids a plenty</li>
+            <li>Top knots</li>
+            <li>Buzz cuts</li>
+            <li>Beards, ear and nose hairs need trimming too</li>
+          </ul>
+        </div>
+      </div>
+    </div>
     </div>
     @await Html.PartialAsync("Footer")
     @await Html.PartialAsync("Header")
