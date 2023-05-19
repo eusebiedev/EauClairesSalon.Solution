@@ -5,26 +5,27 @@
 @model HairSalon.Models.Client
 
 <h4>Add a new Client</h4>
+<div class="col">
+  <p><strong>NOTE:</strong> You need to have at least one Stylist before you can add a Client!</p>
+  <p>Please visit our Stylists page to add one: @Html.ActionLink("Stylist", "Create", "Stylists").</p>
 
-<p><strong>NOTE:</strong> You need to have at least one Stylist before you can add a Client!</p>
-<p>Please visit our Stylists page to add one: @Html.ActionLink("Stylist", "Create", "Stylists").</p>
-
-@using (Html.BeginForm())
-{
-  @Html.LabelFor(model => model.Name)
-  @Html.TextBoxFor(model => model.Name)
-  <br><br>
-  @Html.LabelFor(model => model.Phone)
-  @Html.TextBoxFor(model => model.Phone)
-  <br><br>
-  @Html.LabelFor(model => model.Email)
-  @Html.TextBoxFor(model => model.Email)
-  <br><br>
-  @Html.LabelFor(model => model.Stylist)
-  @Html.DropDownList("StylistId")
-  <br><br>
-  <input type="submit" value="Add new Client" class="btn btn-primary btn-sm" />
-}
-  <br><br>
-<p>@Html.ActionLink("Show all Clients", "Index")</p>
-<p>@Html.ActionLink("Back to Home Page", "Index", "Home")</p>
+  @using (Html.BeginForm())
+  {
+    @Html.LabelFor(model => model.Name, new { @class = "form-label"})
+    @Html.TextBoxFor(model => model.Name,  new { @class = "form-control"})
+    
+    @Html.LabelFor(model => model.Phone, new { @class = "form-label"})
+    @Html.TextBoxFor(model => model.Phone, new { @class = "form-control"})
+    
+    @Html.LabelFor(model => model.Email, new { @class = "form-label"})
+    @Html.TextBoxFor(model => model.Email, new { @class = "form-control"})
+    <br>
+    @Html.LabelFor(model => model.Stylist)
+    @Html.DropDownList("StylistId")
+    <br><br>
+    <input type="submit" value="Add new Client" class="btn btn-primary btn-sm" />
+  }
+  <br>
+  <p>@Html.ActionLink("Show all Clients", "Index")</p>
+  <p>@Html.ActionLink("Back to Home Page", "Index", "Home")</p>
+</div>
