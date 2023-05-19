@@ -17,7 +17,7 @@
 
 ## Description 
 
-_Eau Claire's Salon is an application built to allow the user to add, edit, delete and save Stylists and their Clients. View a list of stylists details and clients, and view the stylists each client prefers. 
+Eau Claire's Salon is an application built to allow the user to add, edit, delete and save Stylists and their Clients. View a list of stylists details and clients, and view the stylists each client prefers. 
 
 ## Setup/Installation Requirements
 
