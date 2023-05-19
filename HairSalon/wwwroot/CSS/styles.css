@@ -10,7 +10,7 @@ div#footer {
 	width: 100%;
   color:#000000;
 	padding:8px;
-  background: url('/salon.png') repeat; 
+  background: url('./salon.png') repeat; 
   background-position-y: bottom ;
 }
 
