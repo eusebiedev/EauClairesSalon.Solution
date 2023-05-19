@@ -21,15 +21,15 @@ Eau Claire's Salon is an application built to allow the user to add, edit, delet
 
 ## Setup/Installation Requirements
 
-1. _Open your shell of choice (e.g., Terminal or GitBash) and run these commands in order:_
-2. _Clone this repository by running $ `git clone https://github.com/user/examplerepo.git` (replace url with link copied from github)_
-3. _Navigate to the root directory call `EauClairesSalon.Solution`, Create a `.gitignore` file with $ `touch .gitignore`, copy/paste this into the .gitignore file:_
+1. Open your shell of choice (e.g., Terminal or GitBash) and run these commands in order:
+2. Clone this repository by running $ `git clone https://github.com/user/examplerepo.git` (replace url with link copied from github)
+3. Navigate to the root directory call `EauClairesSalon.Solution`, Create a `.gitignore` file with $ `touch .gitignore`, copy/paste this into the .gitignore file:
 ```
 obj
 bin
 appsetting.json
 ```
-3. _Navigate to this project's production directory called "HairSalon" with $ `cd HairSalon`._
+3. Navigate to this project's production directory called "HairSalon" with $ `cd HairSalon`.
 4. Within the production directory create a new file called `appsettings.json`.
 5. Within `appsettings.json`, paste in the following code, replacing the `uid` and `pwd` values with your own username and password for MySQL:
 
@@ -44,7 +44,7 @@ appsetting.json
 * $ `dotnet add package Microsoft.EntityFrameworkCore -v 6.0.0`
 * $ `dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0`
 
-7. Within the production directory "HairSalon", run `dotnet watch run` in the command line to start the applicatoin in development mode with a watcher.
+7. Within the production directory "HairSalon", run `dotnet watch run` in the command line to start the application in development mode with a watcher.
 
 ## Known Bugs 
 
