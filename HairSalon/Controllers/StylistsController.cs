@@ -44,14 +44,14 @@ namespace HairSalon.Controllers
 
     public ActionResult Edit(int id)
     {
-      Stylist thisStylist = _db.Stylist.FirstOrDefault(stylist => stylist.StylistId == id);
+      Stylist thisStylist = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id);
       return View(thisStylist);
     }
 
     [HttpPost]
     public ActionResult Edit(Stylist stylist)
     {
-      _db.Cuisines.Update(stylist);
+      _db.Stylists.Update(stylist);
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
@@ -66,7 +66,7 @@ namespace HairSalon.Controllers
     public ActionResult DeleteConfirmed(int id)
     {
       Stylist thisStylist = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id);
-      _db.Cuisines.Remove(thisStylist);
+      _db.Stylists.Remove(thisStylist);
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
