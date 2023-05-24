@@ -27,7 +27,7 @@ Eau Claire's Salon is an application built to allow the user to add, edit, delet
 ```
 obj
 bin
-appsetting.json
+appsettings.json
 ```
 #### Importing the MySQL Database: 
 * Open MySQL Workbench, in the Navigator > Administration window, select Data Import/Restore.
