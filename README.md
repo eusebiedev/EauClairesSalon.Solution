@@ -34,14 +34,14 @@ appsettings.json
 * In Import Options select Import from Self-Contained File.
 * Navigate to the sql file located in the root directory of this project called `eusebie_siebenberg.sql`
 * Under Default Schema to be Imported To, select the New button.
-* Choose a name for your database and Click OK
+* Choose a name for your database, or simply use `eusebie_siebenberg.sql` and Click OK
 * Navigate to the tab called Import Progress and click Start Import at the bottom right corner of the window.
 * After you are finished with the above steps, reopen the Navigator > Schemas tab. Right click and select Refresh All. 
 * Your new database will appear!
 
 4. Navigate to this project's production directory called "HairSalon" with $ `cd HairSalon`.
 5. Within the production directory create a new file called `appsettings.json`.
-6. Within `appsettings.json`, paste in the following code, replacing `your_database`, `uid`, and `pwd` values with your newly created database name, own username and password for MySQL 
+6. Within `appsettings.json`, paste in the following code, replacing `your_database`, `user-id`, and `password` values with your newly created database name, own username and password for MySQL 
 (remove square brackets when inputting your details):
 
 ```json
